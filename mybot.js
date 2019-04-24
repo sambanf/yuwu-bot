@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on("ready", () => {
@@ -28,7 +28,7 @@ if(!prefix) return;
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
-    message.channel.send('<@" + 357696697251659777 + ">! Fuck You!'); 
+    message.channel.send('<@357696697251659777>! Fuck You!'); 
   }
   
   if (command === "hi") {
