@@ -14,17 +14,21 @@ for(const thisPrefix of prefixes) {
 }
 if(!prefix) return;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
-  //if(message.author.id !== config.myID) return;
+  
   if (message.content.indexOf(prefix) !== 0) return;
  
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
- 
+  // Public Command
   if(command === 'ping') {
     message.channel.send('Pong!');
-  } else
-  if (command === 'blah') {
+  } else if (command === 'blah') {
     message.channel.send('Meh.');
+  }
+  // Private Command
+  if(command === 'feli') {
+    if(message.author.id !== config.myID) return;
+    message.channel.send('Felicia! Fuck You!'); 
   }
   
   if (command === "hi") {
@@ -43,7 +47,7 @@ if(!prefix) return;
       description: "UWU",
       fields: [{
           name: "Single Commands",
-          value: "?ping, ?blah"
+          value: "?ping, ?blah, ?feli"
         },
         {
           name: "Single Argument Commands",
