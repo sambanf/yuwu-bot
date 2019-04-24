@@ -27,7 +27,7 @@ if(!prefix) return;
   }
   // Private Command
   if(command === 'feli') {
-    if(message.author.id !== config.myID) return;
+    if(message.author.id !== process.env.pID) return;
     message.channel.send('Felicia! Fuck You!'); 
   }
   
