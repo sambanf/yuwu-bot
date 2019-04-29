@@ -24,7 +24,10 @@ if(!prefix) return;
     message.channel.send('Pong!');
   } else if (command === 'blah') {
     message.channel.send('Meh.');
-  }
+  } else if (command === 'boss') {
+    message.channel.send('https://cdn.discordapp.com/attachments/570573395016548355/570574119460929536/71b14f92ef420190313083736783.jpg');
+  } 
+
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
