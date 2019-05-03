@@ -26,7 +26,9 @@ if(!prefix) return;
     message.channel.send('Meh.');
   } else if (command === 'boss') {
     message.channel.send('https://cdn.discordapp.com/attachments/570573395016548355/570574119460929536/71b14f92ef420190313083736783.jpg');
-  } 
+  } else if (command === 'playlist'){
+    message.channel.send('-p http://bit.ly/oursdicordmusic');
+  }
 
   // Private Command
   if(command === 'feli') {
@@ -50,7 +52,7 @@ if(!prefix) return;
       description: "UWU",
       fields: [{
           name: "Single Commands",
-          value: "?ping, ?blah, ?feli"
+          value: "?ping, ?blah, ?feli, ?boss"
         },
         {
           name: "Single Argument Commands",
