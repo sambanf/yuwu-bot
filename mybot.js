@@ -25,7 +25,7 @@ if(!prefix) return;
   } else if (command === 'blah') {
     message.channel.send('Meh.');
   } else if (command === 'boss') {
-    message.channel.send('https://cdn.discordapp.com/attachments/570573395016548355/570574119460929536/71b14f92ef420190313083736783.jpg');
+    message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/f9695f9cce420190522084528123.jpg');
   } else if (command === 'playlist'){
     message.channel.send('-p http://bit.ly/oursdicordmusic');
   }
