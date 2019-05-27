@@ -20,20 +20,25 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   // Public Command
-  if(command === 'ping') {
-    message.channel.send('Pong!');
-  } else if (command === 'blah') {
-    message.channel.send('Meh.');
-  } else if (command === 'boss') {
+  if (command === 'boss') {
     message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/f9695f9cce420190522084528123.jpg');
-  } else if (command === 'playlist'){
+  } else if (command === 'playlist' || command === 'pl'){
     message.channel.send('-p http://bit.ly/oursdicordmusic');
+  } else if (command === 'marni'){
+    message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
+  } else if (command === 'brackets'){
+    message.channel.send('https://images-ext-2.discordapp.net/external/qG12NGRpSqiZC-C3-CUQnvv0ZCLIRT1vxUBIuETGh54/https/puu.sh/DoXgm.png');
   }
+  
 
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
     message.channel.send('<@357696697251659777>! Fuck You!'); 
+  } else if(command === 'ping') {
+    message.channel.send('Pong!');
+  } else if (command === 'blah') {
+    message.channel.send('Meh.');
   }
   
   if (command === "hi") {
@@ -51,8 +56,12 @@ if(!prefix) return;
       url: "http://google.com",
       description: "UWU",
       fields: [{
-          name: "Single Commands",
-          value: "?ping, ?blah, ?feli, ?boss"
+          name: "MyPrivateCommands",
+          value: "?ping, ?blah, ?feli"
+        },
+        {
+          name: "Black Desert Online Commands",
+          value: "?boss, ?marni, brakets"
         },
         {
           name: "Single Argument Commands",
