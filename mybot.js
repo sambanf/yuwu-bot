@@ -25,7 +25,7 @@ if(!prefix) return;
   } else if (command === 'playlist' || command === 'pl'){
     message.channel.send('-p http://bit.ly/oursdicordmusic');
   } else if (command === 'marni'){
-    message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
+    message.channel.send('https://i.imgur.com/7gzeDsp.png');
   } else if (command === 'brackets'){
     message.channel.send('https://images-ext-2.discordapp.net/external/qG12NGRpSqiZC-C3-CUQnvv0ZCLIRT1vxUBIuETGh54/https/puu.sh/DoXgm.png');
   }
