@@ -27,7 +27,7 @@ if(!prefix) return;
   } else if (command === 'marni'){
     message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
   } else if (command === 'brackets'){
-    message.channel.send('https://images-ext-2.discordapp.net/external/qG12NGRpSqiZC-C3-CUQnvv0ZCLIRT1vxUBIuETGh54/https/puu.sh/DoXgm.png');
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/665386507036524571/brackets.png');
   }
   
 
