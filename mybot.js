@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+﻿﻿const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on("ready", () => {
@@ -79,3 +79,4 @@ if(!prefix) return;
 });
 
 client.login(process.env.token);
+
