@@ -63,7 +63,7 @@ if(!prefix) return;
         },
         {
           name: "Black Desert Online Commands",
-          value: "?boss, ?marni, ?brakets, ?caphras
+          value: "?boss, ?marni, ?brakets, ?caphras"
         },
         {
           name: "Single Argument Commands",
