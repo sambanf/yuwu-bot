@@ -20,14 +20,16 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   // Public Command
-  if (command === 'boss') {
+  if (command === 'boss' || command === 'wb') {
     message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/f9695f9cce420190522084528123.jpg');
   } else if (command === 'playlist' || command === 'pl'){
     message.channel.send('-p http://bit.ly/oursdicordmusic');
-  } else if (command === 'marni'){
+  } else if (command === 'marni' || command === 'mn'){
     message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
-  } else if (command === 'brackets'){
+  } else if (command === 'brackets' || command === 'br'){
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/665386507036524571/brackets.png');
+  } else if (command === 'caphras' || command === 'cpr'){
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/690475759847866388/unknown.png');
   }
   
 
@@ -61,7 +63,7 @@ if(!prefix) return;
         },
         {
           name: "Black Desert Online Commands",
-          value: "?boss, ?marni, brakets"
+          value: "?boss, ?marni, ?brakets, ?caphras
         },
         {
           name: "Single Argument Commands",
