@@ -30,9 +30,11 @@ if(!prefix) return;
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/665386507036524571/brackets.png');
   } else if (command === 'caphras' || command === 'cpr'){
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/690475759847866388/unknown.png');
+  } else if (command === 'maps' || command === 'bartermaps'){
+    message.channel.send('https://media.discordapp.net/attachments/599514794185326625/691364487164330034/NPCBarterLoc.png');
+  } else if (command === 'fruit' || command === 'fruitsof'){
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/694031136153665547/unknown.png');
   }
-  
-
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
@@ -63,7 +65,7 @@ if(!prefix) return;
         },
         {
           name: "Black Desert Online Commands",
-          value: "?boss, ?marni, ?brakets, ?caphras"
+          value: "?boss, ?marni, ?brakets, ?caphras, ?maps, ?fruit"
         },
         {
           name: "Single Argument Commands",
