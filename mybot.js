@@ -21,7 +21,7 @@ if(!prefix) return;
   const command = args.shift().toLowerCase();
   // Public Command
   if (command === 'boss' || command === 'wb') {
-    message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/f9695f9cce420190522084528123.jpg');
+    message.channel.send('https://media.discordapp.net/attachments/599514794185326625/697272169314648084/23c3181833120200408072136959.png');
   } else if (command === 'playlist' || command === 'pl'){
     message.channel.send('-p http://bit.ly/oursdicordmusic');
   } else if (command === 'marni' || command === 'mn'){
