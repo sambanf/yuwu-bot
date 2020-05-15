@@ -34,7 +34,11 @@ if(!prefix) return;
     message.channel.send('https://media.discordapp.net/attachments/599514794185326625/691364487164330034/NPCBarterLoc.png');
   } else if (command === 'fruit' || command === 'fruitsof'){
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/694031136153665547/unknown.png');
+  } else if (command === 'ccshop' || command === 'seacoin'){
+    message.channel.send(' https://cdn.discordapp.com/attachments/599514794185326625/707372956321448026/bdo-rebinia-seacoins.png');
   }
+  
+ 
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
