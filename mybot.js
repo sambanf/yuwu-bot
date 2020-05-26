@@ -29,7 +29,7 @@ if(!prefix) return;
   } else if (command === 'brackets' || command === 'br'){
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/665386507036524571/brackets.png');
   } else if (command === 'caphras' || command === 'cpr'){
-    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/690475759847866388/unknown.png');
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/713725578045423626/caphras.png');
   } else if (command === 'maps' || command === 'bartermaps'){
     message.channel.send('https://media.discordapp.net/attachments/599514794185326625/691364487164330034/NPCBarterLoc.png');
   } else if (command === 'fruit' || command === 'fruitsof'){
