@@ -27,7 +27,7 @@ if(!prefix) return;
   } else if (command === 'marni' || command === 'mn'){
     message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
   } else if (command === 'brackets' || command === 'br'){
-    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/665386507036524571/brackets.png');
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/742046034514936008/oVJmdny.png');
   } else if (command === 'caphras' || command === 'cpr'){
     message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/713725578045423626/caphras.png');
   } else if (command === 'maps' || command === 'bartermaps'){
