@@ -21,6 +21,7 @@ if(!prefix) return;
   const command = args.shift().toLowerCase();
   //Bunnyla Command
   console.log(message.guild.id);
+  console.log(process.env.gID);
   if(message.guild.id == process.env.gID){
     if (command === 'boss' || command === 'wb') {
       message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/c79e9b8602620200624155615445.jpg');
