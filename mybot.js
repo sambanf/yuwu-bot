@@ -20,7 +20,7 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   //Bunnyla Command
-  if(message.guild.available == true){
+  if(message.guild != null){
     if(typeof message.guild.id !== "undefined") {
       // obj is a valid variable, do something here.
       if(message.guild.id == process.env.gID){
