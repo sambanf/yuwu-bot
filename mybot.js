@@ -20,10 +20,10 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   //Bunnyla Command
-  var server = message.guild.id; 
-  if(typeof server !== "undefined") {
+
+  if(typeof message.guild.id !== "undefined") {
     // obj is a valid variable, do something here.
-    if(server == process.env.gID){
+    if(message.guild.id == process.env.gID){
       if (command === 'boss' || command === 'wb') {
         message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/c79e9b8602620200624155615445.jpg');
       } else if (command === 'playlist' || command === 'pl'){
