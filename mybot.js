@@ -20,7 +20,7 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   //Bunnyla Command
-  if(Guild.id = "430758866481971200"){
+  if(message.Guild.id = "430758866481971200"){
     if (command === 'boss' || command === 'wb') {
       message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/c79e9b8602620200624155615445.jpg');
     } else if (command === 'playlist' || command === 'pl'){
