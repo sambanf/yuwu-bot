@@ -20,40 +20,28 @@ if(!prefix) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   //Bunnyla Command
-  if(message.guild != null){
-    if(typeof message.guild.id !== "undefined") {
-      // obj is a valid variable, do something here.
-      if(message.guild.id == process.env.gID){
-        if (command === 'boss' || command === 'wb') {
-          message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/c79e9b8602620200624155615445.jpg');
-        } else if (command === 'playlist' || command === 'pl'){
-          message.channel.send('-p http://bit.ly/oursdicordmusic');
-        } else if (command === 'marni' || command === 'mn'){
-          message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
-        } else if (command === 'brackets' || command === 'br'){
-          message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/742046034514936008/oVJmdny.png');
-        } else if (command === 'caphras' || command === 'cpr'){
-          message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/713725578045423626/caphras.png');
-        } else if (command === 'maps' || command === 'bartermaps'){
-          message.channel.send('https://media.discordapp.net/attachments/599514794185326625/691364487164330034/NPCBarterLoc.png');
-        } else if (command === 'fruit' || command === 'fruitsof'){
-          message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/694031136153665547/unknown.png');
-        } else if (command === 'ccshop' || command === 'seacoin'){
-          message.channel.send(' https://cdn.discordapp.com/attachments/599514794185326625/707372956321448026/bdo-rebinia-seacoins.png');
-        }
-      }
-    }
+  if (command === 'boss' || command === 'wb') {
+    message.channel.send('https://s1.pearlcdn.com/SEA/Upload/WIKI/c79e9b8602620200624155615445.jpg');
+  } else if (command === 'playlist' || command === 'pl'){
+    message.channel.send('-p http://bit.ly/oursdicordmusic');
+  } else if (command === 'marni' || command === 'mn'){
+    message.channel.send('https://cdn.discordapp.com/attachments/570516637602545685/581456225372471298/marnies_stone_guide_update_underwater_content.png');
+  } else if (command === 'brackets' || command === 'br'){
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/742046034514936008/oVJmdny.png');
+  } else if (command === 'caphras' || command === 'cpr'){
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/713725578045423626/caphras.png');
+  } else if (command === 'maps' || command === 'bartermaps'){
+    message.channel.send('https://media.discordapp.net/attachments/599514794185326625/691364487164330034/NPCBarterLoc.png');
+  } else if (command === 'fruit' || command === 'fruitsof'){
+    message.channel.send('https://cdn.discordapp.com/attachments/599514794185326625/694031136153665547/unknown.png');
+  } else if (command === 'ccshop' || command === 'seacoin'){
+    message.channel.send(' https://cdn.discordapp.com/attachments/599514794185326625/707372956321448026/bdo-rebinia-seacoins.png');
   }
-
-  
-  
-  
-  
  
   // Private Command
   if(command === 'feli') {
     if(message.author.id !== process.env.pID) return;
-    message.channel.send('<@357696697251659777>! Fuck You!'); 
+    message.channel.send('<@357696697251659777>! UWU!'); 
   } else if(command === 'ping') { 
   // It sends the user "Pinging"
     message.channel.send("Pinging...").then(m =>{
